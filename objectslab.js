@@ -74,7 +74,6 @@ const canShopHere = () => {
 
 // Problem 3
 
- 
 
 // Declare a JS object called home with
 // A property called rooms with a number value
@@ -89,7 +88,25 @@ const canShopHere = () => {
 // Check if isForSale and isInGoodLocation. If true set buyHouse to true, else false
 // Delete the isForSale property of home.
  
+const home = {
+    rooms : 4,
+    bathrooms : 2.5,
+    isForSale : true,
+    isInGoodLocation : true,
+}
+home.price = 500000;
+home ['year'] = 2020; 
+home.isForSale = false;
+home.bathrooms;
 
+const buyHouse = () => {
+    if (store.isForSale === true && store.isInGoodLocation === true) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+delete home.isForSale;
 // Problem 4, 5, 6
 
 // Declare a JS object with 4 properties (4 keys and 4 values).
