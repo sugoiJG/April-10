@@ -100,7 +100,7 @@ home.isForSale = false;
 home.bathrooms;
 
 const buyHouse = () => {
-    if (store.isForSale === true && store.isInGoodLocation === true) {
+    if (home.isForSale === true && home.isInGoodLocation === true) {
       return true;
     } else {
       return false;
@@ -117,3 +117,20 @@ delete home.isForSale;
 // Create a new variable (not part of the object) that has no value.
 // Write some kind of if / else statement to check some information of the object. Based on true / false set the value of the variable you made in number 6 to true or false.
 // Delete one of the object properties.
+
+const dog = {
+softFur : true,
+gender : "Male",
+name : "Haku",
+isFriendly : false,
+
+}
+
+dog.weight = 22;
+dog ["pottyTrained"] = true;
+dog.isFriendly = true;
+dog.name;
+
+const petDog = {
+  isFriendly: dog.isFriendly ? "pet" : "do not pet",
+};
